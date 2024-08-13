@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 import './ProjectPage.css';
 
 const ProjectPage = () => {
@@ -8,19 +8,19 @@ const ProjectPage = () => {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        axios.get(`https://finalpro-1.onrender.com/${id}`)
+        axios.get(`https://finalpro-2.onrender.com/${id}`)
             .then(response => setProject(response.data))
             .catch(error => console.log(error));
     }, [id]);
 
-    if (!project) return <div>Loading...</div>;
+    if (!project) return <p>Loading...</p>;
 
     return (
         <div className="project-page">
             <h2>{project.title}</h2>
-            {project.image && <img src={`https://finalpro-1.onrender.com/${project.image}`} alt={project.title} />}
+            {project.image && <img src={`https://finalpro-2.onrender.com/${project.image}`} alt={project.title} />}
             <p>{project.description}</p>
-            <small>by {project.author}</small>
+            <small>By: {project.author}</small>
         </div>
     );
 };
