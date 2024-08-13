@@ -1,0 +1,42 @@
+.project-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.project-list h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+.project-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list ul li {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #fff;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.project-list ul li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-list ul li h3 {
+    margin: 0;
+}
+
+.project-list ul li img {
+    max-width: 100%;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.project-list ul li small {
+    color: #666;
+}

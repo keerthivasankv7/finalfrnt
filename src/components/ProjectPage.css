@@ -1,0 +1,32 @@
+.project-page {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-page h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+.project-page img {
+    max-width: 100%;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+.project-page p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.project-page small {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    color: #666;
+}

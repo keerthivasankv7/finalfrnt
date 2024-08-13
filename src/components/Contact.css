@@ -1,0 +1,27 @@
+.contact-page {
+    text-align: center;
+    padding: 2em 1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-page h1 {
+    font-size: 2em;
+    color: #343a40;
+    margin-bottom: 1em;
+}
+
+.contact-page p {
+    font-size: 1.2em;
+    color: #6c757d;
+    margin: 0.5em 0;
+}
+
+.contact-page a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-page a:hover {
+    text-decoration: underline;
+}

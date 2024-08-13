@@ -1,0 +1,48 @@
+.project-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-form > div {
+    margin-bottom: 1em;
+}
+
+.project-form > div label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #343a40;
+}
+
+.project-form > div input,
+.project-form > div textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-form > div input[type="file"] {
+    padding: 0;
+}
+
+.project-form > button {
+    align-self: center;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 5px;
+    background: #343a40;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project-form > button:hover {
+    background: #495057;
+}
