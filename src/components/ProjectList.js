@@ -7,7 +7,7 @@ const ProjectList = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        axios.get('https://finalpro-zamt.onrender.com/projects')
+        axios.get('https://finalpro-1.onrender.com/projects')
             .then(response => setProjects(response.data))
             .catch(error => console.log(error));
     }, []);
@@ -20,7 +20,7 @@ const ProjectList = () => {
                     <li key={project._id}>
                         <Link to={`/projects/${project._id}`}>
                             <h3>{project.title}</h3>
-                            {project.image && <img src={`https://finalpro-zamt.onrender.com/${project.image}`} alt={project.title} />}
+                            {project.image && <img src={`https://finalpro-1.onrender.com/${project.image}`} alt={project.title} />}
                             <p>{project.description}</p>
                             <small>by {project.author}</small>
                         </Link>

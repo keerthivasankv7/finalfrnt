@@ -16,7 +16,7 @@ const ProjectForm = () => {
         formData.append('author', author);
         if (image) formData.append('image', image);
 
-        axios.post('https://finalpro-zamt.onrender.com/projects', formData, {
+        axios.post('https://finalpro-1.onrender.com/projects', formData, {
             headers: { 'Content-Type': 'multipart/form-data' }
         })
         .then(response => {

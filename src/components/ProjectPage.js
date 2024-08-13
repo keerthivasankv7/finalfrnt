@@ -8,7 +8,7 @@ const ProjectPage = () => {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        axios.get(`https://finalpro-zamt.onrender.com/${id}`)
+        axios.get(`https://finalpro-1.onrender.com/${id}`)
             .then(response => setProject(response.data))
             .catch(error => console.log(error));
     }, [id]);
@@ -18,7 +18,7 @@ const ProjectPage = () => {
     return (
         <div className="project-page">
             <h2>{project.title}</h2>
-            {project.image && <img src={`https://finalpro-zamt.onrender.com/${project.image}`} alt={project.title} />}
+            {project.image && <img src={`https://finalpro-1.onrender.com/${project.image}`} alt={project.title} />}
             <p>{project.description}</p>
             <small>by {project.author}</small>
         </div>
