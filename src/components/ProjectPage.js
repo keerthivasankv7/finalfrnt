@@ -8,7 +8,7 @@ const ProjectPage = () => {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        axios.get(`https://finalpro-2.onrender.com/${id}`)
+        axios.get(`https://finalpro-2.onrender.com/projects/${id}`)
             .then(response => setProject(response.data))
             .catch(error => console.log(error));
     }, [id]);
